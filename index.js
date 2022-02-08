@@ -4,11 +4,12 @@ let operationEl = document.getElementById("operation-el");
 let resultEl = document.getElementById("result-el");
 
 let result = 0;
-let num1 = parseInt(firstNumEl.value);
-let num2 = parseInt(secondNumEl.value);
+let num1 = 0;
+let num2 = 0;
 
 function add() {
   operationEl.innerText = "+";
+  getNums();
   result = num1 + num2;
   printResult();
   logEqn();
@@ -16,6 +17,7 @@ function add() {
 
 function subtract() {
   operationEl.innerText = "-";
+  getNums();
   result = num1 - num2;
   printResult();
   logEqn();
@@ -23,6 +25,7 @@ function subtract() {
 
 function multiply() {
   operationEl.innerText = "x";
+  getNums();
   result = num1 * num2;
   printResult();
   logEqn();
@@ -30,6 +33,7 @@ function multiply() {
 
 function divide() {
   operationEl.innerText = "/";
+  getNums();
   result = num1 / num2;
   printResult();
   logEqn();
@@ -41,4 +45,9 @@ function printResult() {
 
 function logEqn() {
   console.log(num1 + " " + operationEl.innerText + " " + num2 + " = " + result);
+}
+
+function getNums() {
+  num1 = parseInt(firstNumEl.value);
+  num2 = parseInt(secondNumEl.value);
 }
