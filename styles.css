@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400|Poppins:400");
+
+body {
+  background-color: rgb(0, 83, 83);
+  font-family: monospace;
+  font-weight: 400;
+  color: white;
+  line-height: 1.75;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+span {
+  font-size: 2rem;
+}
+
+#title {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0 20px;
+  background-color: darkcyan;
+  border-radius: 20px;
+}
+
+#numbers {
+  margin: 0 auto;
+  text-align: center;
+  background-color: darkcyan;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* #numbers span {
+  padding: 20px;
+  font-weight: 700;
+  outline: auto;
+} */
+
+#numbers input {
+  padding: 20px;
+  font-weight: 700;
+  outline: auto;
+  width: 150px;
+  background-color: darkcyan;
+  color: white;
+  font-size: 2rem;
+}
+
+#operation-el {
+  padding: 20px;
+  font-weight: 700;
+  outline: auto;
+}
+
+#buttons {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#buttons button {
+  background-color: darkcyan;
+  border-width: 0;
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-size: 2rem;
+  color: white;
+}
+
+#buttons button:hover {
+  background-color: rgb(0, 179, 179);
+}
+
+#results {
+  margin: 0 auto;
+  text-align: center;
+  background-color: darkcyan;
+  max-width: 300px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+
+#results h3 {
+  font-size: 2rem;
+}
